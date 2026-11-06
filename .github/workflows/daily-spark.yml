@@ -29,5 +29,5 @@ jobs:
           git config --global user.name "jinyinzao-blog"
           git config --global user.email "1075652537@qq.com"
           git add spark.txt
-          git commit -m "chore: 更新每日打卡"
+          git diff --staged --quiet || git commit -m "chore: Daily spark auto-commit"
           git push
